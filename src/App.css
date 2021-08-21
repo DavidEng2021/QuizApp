@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+*{
+    color: white;
+}
+.App{
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Menu, .Quiz, .EndScreen {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu button, .Quiz button, .EndScreen button {
+    width: 300px;
+    height: 50px;
+    margin: 5px;
+    border:none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+}
+
+.Menu, .Quiz, .EndScreen {
+    color: white;
+}
+
+.options {
+    width: 100%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
