@@ -29,7 +29,21 @@
     font-size: 20px;
     cursor: pointer;
     color: black;
+    transition: .3s;
 }
+
+.Menu button:hover, .Quiz button:hover, .EndScreen button:hover{
+    font-size: 25px;
+}
+
+.Menu button:focus, .Quiz button:focus, .EndScreen button:focus{
+    background-color: skyblue;
+}
+
+#finishBtn:focus, #nextBtn:focus{
+    background-color: white;
+}
+
 
 .Menu, .Quiz, .EndScreen {
     color: white;
@@ -41,4 +55,26 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.good, .bad{
+    border-radius: 50%;
+    animation-name: cool;
+    animation-duration: 1.5s;
+    height: 200px;
+    width: 200px;
+}
+
+.bad{
+    height: 250px;
+    width: 250px;
+}
+
+@keyframes cool{
+    from{
+        transform:scale(0,0)
+    }
+    to{
+        transform:scale(1,1)
+    }
 }

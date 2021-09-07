@@ -35,8 +35,8 @@ export const Quiz = () => {
             </div>
 
             {currQuestion == Questions.length -1 ? (
-                <button onClick={finishQuiz}>作答完畢</button>
-            ): <button onClick={nextQuestion}>Next Question</button>}
+                <button id="finishBtn" onClick={finishQuiz}>作答完畢</button>
+            ): <button id="nextBtn" onClick={nextQuestion}>Next Question</button>}
             
         </div>
 
